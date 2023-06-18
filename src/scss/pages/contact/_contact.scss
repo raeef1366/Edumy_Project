@@ -1,0 +1,99 @@
+#contact {
+    padding: 50px;
+
+    .contact_icon {
+        text-align: center;
+
+        i {
+            font-size: 50px;
+        }
+    }
+
+    .contact_text {
+        text-align: center;
+
+        p {
+            color: rgb(126, 126, 126);
+        }
+    }
+}
+
+#message {
+    // height: 300px;
+    padding: 50px;
+
+    form {
+        .guruweba_example_form {
+            width: 290px;
+        }
+
+        .guruweba_example_caption {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .guruweba_example_form .guruweba_example_infofield {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .guruweba_example_form select,
+        .guruweba_example_form input,
+        .guruweba_example_form textarea {
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px 15px;
+        }
+
+        input {
+            width: 700px;
+            margin: 5px 0;
+            padding: 5px 15px;
+            height: 50px;
+        }
+
+        .btn_1 {
+            width: 200px;
+            height: 70px;
+            color: blue;
+            background-color: white;
+            border-color: blue;
+            transition: .5s linear;
+
+            &:hover {
+                background-color: blue;
+                color: white;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 500px) {
+        .map {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .guruweba_example_form {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .guruweba_example_form {
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width: 1024px) {
+        .map {
+            display: none;
+        }
+    }
+
+
+
+
+}

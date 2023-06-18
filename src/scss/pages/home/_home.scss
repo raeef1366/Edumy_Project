@@ -1,0 +1,594 @@
+#back {
+    background-image: url(http://demo.createdbycocoon.com/moodle/edumy/12/pluginfile.php/452/block_cocoon_hero_4/content/1.jpg);
+    width: 100%;
+    height: 820px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $backColor;
+        opacity: .702;
+    }
+
+    .text {
+        position: relative;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+
+        h2 {
+            @include Text ($f_size: 55px, $f_weight: 600);
+        }
+
+        p {
+            @include Text($f_size: 18px, $f_weight: 500);
+            margin-top: 20px;
+        }
+    }
+
+    .form-1 {
+        width: 380px;
+        position: relative;
+        float: right;
+
+        #form {
+            background-color: $whiteColor;
+            border-radius: 10px;
+            padding: 30px;
+
+            .formHead {
+                background-color: rgb(205, 190, 156);
+                color: $whiteColor;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                padding: 13px 10px;
+                font-size: 15px;
+                margin: -30px -30px 35px;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+
+            .input-control {
+                margin-bottom: 50px;
+
+                input {
+                    border: 0;
+                    color: #3e4448;
+                    border-bottom: 2px solid #ebebeb;
+                    outline: none;
+                    display: block;
+                    width: 100%;
+                    padding: 0px 25px;
+
+                    &:focus {
+                        border-color: #3e4448;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            button {
+                @extend %_button;
+                transition: .3s linear;
+                border: 1px solid #3e444800;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #3e4448;
+                    border: 1px solid #3e4448;
+
+                }
+            }
+        }
+
+    }
+
+    .btn_text {
+        text-align: center;
+
+    }
+
+
+
+
+
+}
+
+
+
+#cards {
+    padding: 50px;
+    border-bottom: 1px solid black;
+    border-color: rgba(0, 0, 0, .1);
+
+    .container {
+        .banText {
+            text-align: center;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .photo {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: all .3s ease;
+            display: block;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                content: "";
+                background-color: rgba(62, 68, 72, 0.8);
+                transition: all .3s ease;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+
+                &::before {
+                    background-color: rgba(205, 190, 156, 0.96);
+                    opacity: .8;
+                }
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+
+            }
+
+            .photoText {
+                position: absolute;
+                top: 80px;
+                left: 8%;
+                right: 0;
+                text-align: center;
+
+                span {
+                    color: white;
+                    font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+
+        .btn-card {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+
+            button {
+                @extend %_button;
+                transition: .3s linear;
+                border: 1px solid #3e444800;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #3e4448;
+                    border: 1px solid #3e4448;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+#weDo {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 30px;
+
+    .txt {
+        text-align: center;
+        padding: 45px;
+
+        h1 {
+            font-size: 26px;
+            font-family: 'Nunito Sans', sans-serif;
+            color: rgb(10, 10, 10);
+        }
+
+        p {
+            color: rgb(111, 112, 116);
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+
+    .all {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0px;
+        background-color: #f0efef;
+        position: relative;
+        cursor: pointer;
+        transition: all .3s linear;
+
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .icon-1 {
+            position: absolute;
+            top: 15%;
+            left: 18%;
+            font-size: 50px;
+            color: rgb(205, 190, 156);
+        }
+
+        .weTxt {
+            position: absolute;
+            top: 55%;
+            left: 16%;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+
+            span {
+                font-weight: bold;
+
+            }
+        }
+
+    }
+}
+
+
+#topCourses {
+    padding: 50px;
+
+
+    .cours_text {
+        text-align: center;
+
+        h1 {
+
+            font-size: 26px;
+            color: rgb(62, 68, 72);
+            font-weight: 700;
+        }
+
+        p {
+            color: rgb(111, 112, 116);
+        }
+    }
+
+
+    .list {
+
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #3e4448;
+
+                }
+            }
+        }
+    }
+
+    .cours-img {
+        position: relative;
+        cursor: pointer;
+
+        img {
+            object-fit: cover;
+            width: 300px;
+            height: 400px;
+            border-radius: 5px;
+        }
+
+        .updated {
+            position: absolute;
+            top: 53%;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .img_icon {
+            position: absolute;
+            top: 75%;
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+
+            li {
+                list-style: none;
+                color: #d0d23c;
+            }
+
+            .zero {
+                color: white;
+            }
+        }
+
+        .icons2 {
+            position: absolute;
+            top: 90%;
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+            color: $whiteColor;
+        }
+    }
+}
+
+
+
+#banner {
+    background-image: url(https://demo.createdbycocoon.com/moodle/edumy/12/pluginfile.php/455/block_cocoon_parallax_features/content/3.jpg);
+    width: 100%;
+    // height: 820px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(62, 68, 72);
+        opacity: .702;
+    }
+
+    .inc_txt {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-family: "Nunito";
+        padding-bottom: 8%;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+    }
+
+
+    .all-crd {
+        // position: absolute;
+        // width: 300px;
+        text-align: -webkit-center;
+
+        .all {
+
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin: 10px 0px;
+            background-color: #555;
+            position: relative;
+            cursor: pointer;
+            transition: all .3s linear;
+
+
+            &:hover {
+                background-color: rgb(205, 190, 156);
+                color: white;
+            }
+
+            .icon-1 {
+                position: absolute;
+                top: 16%;
+                left: 26%;
+                font-size: 50px;
+                color: #00eb74;
+            }
+
+
+
+        }
+
+        .weTxt {
+            position: relative;
+            color: white;
+            margin-top: 5%;
+            font-weight: 700;
+
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+
+
+
+
+}
+
+
+#slider {
+    padding: 50px;
+
+    .slide-text {
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        max-width: 1200px;
+        position: relative;
+        padding: 30px;
+    }
+
+    .wrapper i {
+        top: 50%;
+        height: 44px;
+        width: 44px;
+
+        color: #343F4F;
+        cursor: pointer;
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+    }
+
+    .wrapper i:active {
+        transform: translateY(-50%) scale(0.9);
+    }
+
+    .wrapper i:hover {
+        background: #f2f2f2;
+    }
+
+    .wrapper i:first-child {
+        left: -22px;
+        display: none;
+    }
+
+    .wrapper i:last-child {
+        right: -22px;
+    }
+
+    .wrapper .carousel {
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+
+    .carousel.dragging {
+        cursor: grab;
+        scroll-behavior: auto;
+    }
+
+    .carousel.dragging img {
+        pointer-events: none;
+    }
+
+    .carousel img {
+        height: 340px;
+        object-fit: cover;
+        user-select: none;
+        margin-left: 14px;
+        width: calc(100% / 3);
+    }
+
+    .carousel img:first-child {
+        margin-left: 0px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .carousel img {
+            width: calc(100% / 2);
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .carousel img {
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+#accardeon {
+    padding: 50px;
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1);
+
+    .accard_text {
+        text-align: center;
+    }
+
+    .accordion {
+        padding: 50px;
+    }
+
+    .accordion-button {
+        background-color: rgb(245, 245, 246);
+        transition: .5s linear;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+
+#need {
+    padding: 50px;
+
+    .need-text {
+        text-align: center;
+    }
+
+    .all_need_img {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+
+        .need_img {
+            gap: 40px;
+            display: flex;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        .all_need_img {
+            display: none;
+        }
+    }
+
+}
