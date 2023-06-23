@@ -1346,6 +1346,7 @@ nav .navbar .links li:hover .js-sub-menu {
 
 #topCourses {
   padding: 50px;
+  overflow-x: hidden;
 }
 #topCourses .cours_text {
   text-align: center;
