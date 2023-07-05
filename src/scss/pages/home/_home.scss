@@ -98,7 +98,44 @@
     }
 
 
+    @media screen and (max-width: 500px) {
+        .text {
+            padding-top: 60px;
+            text-align: center;
 
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 393px) {
+        .text {
+            padding-top: 60px;
+            text-align: center;
+
+            h2 {
+                font-size: 30px;
+                white-space: pre;
+
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 688px) {
+        .text {
+            padding-top: 60px;
+            text-align: center;
+
+            h2 {
+                // font-size: 30px;
+                white-space: pre;
+
+            }
+        }
+    }
 
 
 }
@@ -115,11 +152,14 @@
             text-align: center;
 
             h1 {
-                font-size: 35px;
+                font-size: 26px;
+                font-weight: 700;
             }
 
             p {
                 font-size: 15px;
+                font-weight: 400;
+                color: #6f7074;
             }
         }
 
@@ -380,7 +420,8 @@
         color: white;
         text-align: center;
         font-family: "Nunito";
-        padding-bottom: 8%;
+        // padding-bottom: 8%;
+        padding: 50px;
 
         h2 {
             font-size: 30px;

@@ -1221,6 +1221,34 @@ nav .navbar .links li:hover .js-sub-menu {
 #back .btn_text {
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  #back .text {
+    padding-top: 60px;
+    text-align: center;
+  }
+  #back .text h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 393px) {
+  #back .text {
+    padding-top: 60px;
+    text-align: center;
+  }
+  #back .text h2 {
+    font-size: 30px;
+    white-space: pre;
+  }
+}
+@media screen and (max-width: 688px) {
+  #back .text {
+    padding-top: 60px;
+    text-align: center;
+  }
+  #back .text h2 {
+    white-space: pre;
+  }
+}
 
 #cards {
   padding: 50px;
@@ -1231,10 +1259,13 @@ nav .navbar .links li:hover .js-sub-menu {
   text-align: center;
 }
 #cards .container .banText h1 {
-  font-size: 35px;
+  font-size: 26px;
+  font-weight: 700;
 }
 #cards .container .banText p {
   font-size: 15px;
+  font-weight: 400;
+  color: #6f7074;
 }
 #cards .container .photo {
   width: 100%;
@@ -1434,7 +1465,7 @@ nav .navbar .links li:hover .js-sub-menu {
   color: white;
   text-align: center;
   font-family: "Nunito";
-  padding-bottom: 8%;
+  padding: 50px;
 }
 #banner .inc_txt h2 {
   font-size: 30px;
